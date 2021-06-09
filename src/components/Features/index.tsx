@@ -28,7 +28,7 @@ export const Features: FC<FeaturesProps> = () => {
           style={{
             lineHeight: "40px",
             display: "inline",
-            backgroundImage: `linear-gradient(to bottom, #F8F8F8 60%, rgba(64,77,153,0.3) 50%)`,
+            backgroundImage: `linear-gradient(to bottom, #fff 60%, rgba(64,77,153,0.3) 50%)`,
             backgroundSize: "100% 37px",
           }}
         >
