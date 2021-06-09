@@ -1,0 +1,9 @@
+.priceContainer {
+  transform: rotate(3.09deg);
+  -webkit-transform-origin: 50% 51%;
+  transform-origin: 50% 51%;
+}
+
+.image-shadow {
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+}

@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/layout";
+import { FAQ } from "./components/faq/faq";
+import { Features } from "./components/Features";
+import { FooterCta } from "./components/footerCTA";
+import { Hero } from "./components/Hero";
+import { HowMathGapsWork } from "./components/howMathgapsWork";
+import { HowWillMathGapsHelpYou } from "./components/howWillMathGapsHelpYou";
+import { StartForFree } from "./components/startForFreeUpgrade";
+import { ThePerfectToolForTutoring } from "./components/thePerfectToolForTutoring";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <Box
+        mt={{
+          base: "180px",
+          md: "100px",
+        }}
+      >
+        <Features />
+      </Box>
+      <Box mt="100px">
+        <HowMathGapsWork />
+      </Box>
+      <HowWillMathGapsHelpYou />
+      <Box mt={{ base: "40px", md: "80px" }}>
+        <ThePerfectToolForTutoring />
+      </Box>
+      <Box>
+        <StartForFree />
+      </Box>
+      <FAQ />
+      <Box
+        mt={{ base: "40px", md: "100px" }}
+        mb={{ base: "60px", md: "100px" }}
+      >
+        <FooterCta />
+      </Box>
+    </>
   );
 }
 
