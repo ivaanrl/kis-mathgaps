@@ -34,5 +34,5 @@ export const ExternalLink: FC<externalLinkProps> = ({
   //  }
   //}, [linkSuffix, location.pathname]);
 
-  return <a href={normalLink + linkSuffix}>{children}</a>;
+  return <a href={"https://kisacademics.mathgaps.com"}>{children}</a>;
 };
