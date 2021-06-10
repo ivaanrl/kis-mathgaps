@@ -146,8 +146,8 @@ export const HowWillMathGapsHelpYou: FC<HowWillMathGapsHelpYouProps> = () => {
               fontSize="24px"
               fontWeight={700}
               color="black.main"
-              textAlign={{ base: "center", md: "left" }}
-              width={{ md: "226px", xl: "auto" }}
+              textAlign={{ base: "center", md: "center" }}
+              width={{ md: "226px", xl: "450px" }}
             >
               Access these amazing benefits!
             </Text>
@@ -164,7 +164,7 @@ export const HowWillMathGapsHelpYou: FC<HowWillMathGapsHelpYouProps> = () => {
                   width="100%"
                   maxWidth={{ base: "380px", md: "340px" }}
                 >
-                  <Text mr="12px">Get started for FREE!</Text>
+                  <Text mr="12px">Get started</Text>
                   <ButtonArrowRight />
                 </Button>
               </ExternalLink>

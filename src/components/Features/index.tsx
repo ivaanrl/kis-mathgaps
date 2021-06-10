@@ -19,7 +19,7 @@ export const Features: FC<FeaturesProps> = () => {
         fontWeight={700}
         color="black.main"
         lineHeight="37px"
-        mb="60px"
+        mb="100px"
         px="20px"
         maxWidth="900px"
         textAlign="center"
@@ -28,7 +28,7 @@ export const Features: FC<FeaturesProps> = () => {
           style={{
             lineHeight: "40px",
             display: "inline",
-            backgroundImage: `linear-gradient(to bottom, #fff 60%, rgba(64,77,153,0.3) 50%)`,
+            backgroundImage: `linear-gradient(to bottom, #fff 60%, #233eda4c 50%)`,
             backgroundSize: "100% 37px",
           }}
         >

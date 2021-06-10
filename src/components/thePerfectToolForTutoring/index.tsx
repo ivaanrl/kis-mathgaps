@@ -87,7 +87,7 @@ export const ThePerfectToolForTutoring: FC<ThePerfectToolForTutoringProps> =
               ref={thirdNodeRef}
               title="Weaknesses are prioritised"
               description={
-                "Tutors know exactly where the student struggles and can focus attention on areas of need."
+                "Tutors know exactly where the student struggles and can focus their attention on areas of need."
               }
               icon={Teacher}
             />

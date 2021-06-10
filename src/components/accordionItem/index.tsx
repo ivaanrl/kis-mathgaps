@@ -1,7 +1,6 @@
 import { FC } from "react";
 import {
   AccordionButton,
-  AccordionIcon,
   AccordionItem as ChakraAccordionItem,
   AccordionPanel,
   Box,
@@ -42,7 +41,6 @@ export const AccordionItem: FC<AccordionItemProps> = ({
         <Box flex="1" textAlign="left">
           {title}
         </Box>
-        <AccordionIcon />
       </AccordionButton>
       <AccordionPanel color="blue.dark" fontSize="16px" px="24px">
         {description}

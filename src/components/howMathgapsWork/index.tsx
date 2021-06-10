@@ -60,7 +60,7 @@ export const HowMathGapsWork = forwardRef<HTMLDivElement, HowMathGapsWorkProps>(
               alignItems={{ base: "flex-start", md: "center" }}
             >
               <Box width="100%" display={{ base: "none", md: "block" }}>
-                <PageSwitcher selected={0} />
+                <PageSwitcher selected={5} />
               </Box>
               {currentWidth < 768 ? (
                 <MobilePageContent selected={0} />
@@ -69,14 +69,11 @@ export const HowMathGapsWork = forwardRef<HTMLDivElement, HowMathGapsWorkProps>(
               )}
             </Flex>
             <Flex
-              my={currentWidth < 768 ? "0px" : "200px"}
+              my={currentWidth < 768 ? "0px" : "60px"}
               px="26px"
               flexDirection="column"
               alignItems={{ base: "flex-start", md: "center" }}
             >
-              <Box width="100%" display={{ base: "none", md: "block" }}>
-                <PageSwitcher selected={1} />
-              </Box>
               {currentWidth < 768 ? null : <PageContentSwitcher selected={1} />}
             </Flex>
             <Flex
@@ -84,9 +81,6 @@ export const HowMathGapsWork = forwardRef<HTMLDivElement, HowMathGapsWorkProps>(
               flexDirection="column"
               alignItems={{ base: "flex-start", md: "center" }}
             >
-              <Box width="100%" display={{ base: "none", md: "block" }}>
-                <PageSwitcher selected={2} />
-              </Box>
               {currentWidth < 768 ? null : <PageContentSwitcher selected={2} />}
             </Flex>
           </Flex>

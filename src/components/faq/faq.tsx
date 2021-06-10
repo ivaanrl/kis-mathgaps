@@ -32,23 +32,23 @@ export const FAQ = () => {
           defaultIndex={[0, 1, 2, 3, 4, 5]}
         >
           <AccordionItem
-            title="Who can complete a MathGaps assessment? "
-            description="Gaps are identified in maths from Years 5-10, as this content serves as the foundation for advanced high-school maths, it is suggested that students in Years 8-12 will get the most benefit from MathGaps."
+            title="Who can complete a MathGaps assessment?"
+            description="MathGaps is currently suitable for students from years 8-10. It will soon be available to students from years 3-11."
           />
           <AccordionItem
             title="How long does an assessment take to complete?"
-            description="It is expected that students will complete their fundamentals test in 20-25 minutes. The following topic tests should not go for more than 20 minutes each."
+            description="The average length is 15 minutes; however, this can vary across students and topics."
           />
           <AccordionItem
             title="How will my child fill their gaps?"
-            description="After completing the test, your child is generated a personal learning roadmap that represents the optimal order to fill any gaps. Your child may use online resources or receive support from a tutor to learn this material."
+            description="After completing the test, your child is generated a personalised learning program that provides the optimal order to fill any gaps. Your child may use online resources or receive support from a tutor to learn this material."
           />
           <AccordionItem
             title="How do I pay for premium access? "
             description="Once you have logged into the application you will be able to purchase premium access. Payment is securely completed using Stripe."
           />
           <AccordionItem
-            title="Do I need to sign up and create an account for each of my children? "
+            title="Do I need to sign up different accounts for each of my children?"
             description="For the time being, each student will require their own MathGaps account. However, we are developing the technology to allow multiple children to be linked under a parent account. We will email you when this feature becomes available."
           />
           <AccordionItem

@@ -1,12 +1,22 @@
-import { Flex, Text, Container, chakra, Box, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Container,
+  chakra,
+  Box,
+  Image,
+  Button,
+} from "@chakra-ui/react";
 import { FC, useEffect, useState } from "react";
+import { ReactComponent as ArrowRight } from "../../svgs/arrowRight.svg";
 import { useWindowDimensions } from "../../hooks";
 import { HeroImage } from "./heroImage";
 import { motion } from "framer-motion";
 //import BackgroundImageSmall from "../../images/heroBgSmall.png";
 //import BackgroundImageMobile from "../../images/heroBgMobile.png";
 import HeroShape from "../../images/hero-shape.png";
-import { TutoringCompanyCard } from "./tutoringCompanyCard";
+import { ExternalLink } from "../externalLink/externalLink";
+import { isMobile } from "react-device-detect";
 
 export interface HeroProps {}
 
@@ -140,10 +150,35 @@ export const Hero: FC<HeroProps> = () => {
                   textAlign={{ base: "center", lg: "left" }}
                   maxWidth={{ base: "240px", md: "none" }}
                 >
-                  An essential tool for KIS Academics students from years 8-10
+                  An essential tool for KIS Academics students in years 8-10
                 </Text>
               </Box>
-              <TutoringCompanyCard tutoringCompany="kisacademics" />
+
+              <Box
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                initial="initial"
+                animate="final"
+              >
+                {isMobile ? null : (
+                  <ExternalLink linkSuffix="signup">
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      mt={{ base: "28px", "3xl": "48px" }}
+                      minWidth={
+                        currentHeight > 1900 && currentWidth < 2000
+                          ? "550px"
+                          : { "3xl": "600px" }
+                      }
+                    >
+                      <Text mr="12px">Get started</Text>
+                      <ArrowRight />
+                    </Button>
+                  </ExternalLink>
+                )}
+              </Box>
             </Flex>
 
             <Box

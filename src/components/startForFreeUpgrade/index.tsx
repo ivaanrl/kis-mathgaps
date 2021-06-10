@@ -72,10 +72,10 @@ export const StartForFree: FC<StartForFreeUpgradeLaterProps> = () => {
           textAlign="center"
           display={{ base: "none", md: "block" }}
         >
-          Start your MathGaps journey for free. Take the fundamentals test and
-          determine where your gaps lie. {width > 1000 && <br />}
-          If you are loving MathGaps, upgrade to Premium to access more tests,
-          your full results and other cool features.
+          Start your MathGaps journey for free, evaluate one topic and determine
+          where your gaps lie. {width > 1000 && <br />}
+          If you are loving MathGaps, upgrade to access the whole platform, your
+          full results and other cool features.
         </Text>
       </Flex>
       <Flex
@@ -103,7 +103,7 @@ export const StartForFree: FC<StartForFreeUpgradeLaterProps> = () => {
             }
             price={0}
             bps={[
-              { text: "Fundamental gaps assessment" },
+              { text: "One topic of content" },
               { text: "Comprehensive knowledge report" },
               {
                 text: "Gaps assessment for each topic",
@@ -161,13 +161,14 @@ export const StartForFree: FC<StartForFreeUpgradeLaterProps> = () => {
           borderRadius="10px"
           mt={{ base: "40px", md: "-50px" }}
           maxWidth={{ base: "80%", md: "none" }}
+          boxShadow="2px 2px 0px 0px rgba(0, 0, 0, 0.1)"
         >
           <PricingTier
             header={<ProHeader />}
             price={4}
             description="week"
             bps={[
-              { text: "Fundamental gaps assessment" },
+              { text: "Complete access to the platform" },
               { text: "Comprehensive knowledge report" },
               { text: "Gaps assessment for each topic" },
               { text: "Personalised learning roadmap" },

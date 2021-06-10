@@ -64,8 +64,8 @@ export const PricingTier: FC<PricingTierProps> = ({
       >
         {isMobile ? null : (
           <ExternalLink linkSuffix="signup">
-            <Button variant="primary" size="lg">
-              <Text mr="12px">Get started for FREE!</Text>
+            <Button width="250px" variant="primary" size="lg">
+              <Text mr="12px">Get started</Text>
               <ArrowRight />
             </Button>
           </ExternalLink>
